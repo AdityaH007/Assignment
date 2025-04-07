@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">assignemtn</string>
+    <string name="enter_the_url">Enter the URL</string>
+    <string name="play">Play</string>
 </resources>
