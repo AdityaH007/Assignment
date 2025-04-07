@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
 }
 
+
 android {
     namespace = "com.example.assignemtn"
     compileSdk = 35
@@ -47,5 +48,5 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     //libvlc
-    implementation("org.videolan.android:libvlc-all:3.5.0")
+    implementation("org.videolan.android:libvlc-all:4.0.0-eap19")
 }

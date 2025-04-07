@@ -10,11 +10,11 @@
     tools:context=".view.MainActivity">
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/rtsUrlEditText"
+        android:layout_width="377dp"
+        android:layout_height="80dp"
         android:hint="@string/enter_the_url"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
