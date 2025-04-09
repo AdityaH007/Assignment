@@ -9,25 +9,26 @@
     android:padding="16dp"
     tools:context=".view.MainActivity">
 
-    <androidx.appcompat.widget.AppCompatEditText
+    <EditText
         android:id="@+id/rtsUrlEditText"
-        android:layout_width="377dp"
-        android:layout_height="80dp"
-        android:hint="@string/enter_the_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter RTSP URL"
+        android:text="rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mp4"
         android:textSize="16sp" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
+        android:id="@+id/playButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/platButton"
-        android:text="@string/play"
+        android:text="Play"
         android:layout_gravity="center"/>
 
-    <SurfaceView
+    <org.videolan.libvlc.util.VLCVideoLayout
+        android:id="@+id/videoSurface"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/videoSurface"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,16 +37,16 @@
         android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/recordButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/recordButton"
-            android:text="Record"/>
+            android:text="Record" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pipButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/pipButton"
-            android:text="PiP"/>
+            android:text="PiP" />
     </LinearLayout>
 
 </LinearLayout>

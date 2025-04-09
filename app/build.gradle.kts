@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -7,6 +9,13 @@ plugins {
 android {
     namespace = "com.example.assignemtn"
     compileSdk = 35
+
+    packaging {
+        pickFirst ("lib/arm64-v8a/libc++_shared.so")
+        pickFirst ("lib/x86_64/libc++_shared.so")
+        pickFirst ("lib/armeabi-v7a/libc++_shared.so")
+        pickFirst ("lib/x86/libc++_shared.so")
+    }
 
     defaultConfig {
         applicationId = "com.example.assignemtn"
@@ -49,4 +58,7 @@ dependencies {
 
     //libvlc
     implementation("org.videolan.android:libvlc-all:4.0.0-eap19")
+
+
+    implementation ("com.arthenica:ffmpeg-kit-full:6.0-2")
 }
