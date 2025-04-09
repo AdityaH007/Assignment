@@ -11,8 +11,8 @@
 
     <EditText
         android:id="@+id/rtsUrlEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
         android:hint="Enter RTSP URL"
         android:text="rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mp4"
         android:textSize="16sp" />
@@ -26,8 +26,8 @@
 
     <org.videolan.libvlc.util.VLCVideoLayout
         android:id="@+id/videoSurface"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="359dp"
+        android:layout_height="493dp"
         android:layout_weight="1" />
 
     <LinearLayout
@@ -37,16 +37,23 @@
         android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PiP" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/recordButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Record" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/pipButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="PiP" />
     </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pcl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="placeholder" />
 
 </LinearLayout>
